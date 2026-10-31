@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Brain Quest Trivia</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google AdMob / AdSense Web Script (Optional for Web, configured in WebIntoApp) -->
+</head>
+<body>
+
+  <!-- Top Banner Ad Area Placeholder -->
+  <div id="ad-banner-top" class="ad-container"></div>
+
+  <div class="app-container">
+    <header class="quiz-header">
+      <div class="score-board">Score: <span id="score">0</span></div>
+      <div class="timer">Time: <span id="timer">15</span>s</div>
+    </header>
+
+    <main class="quiz-body">
+      <div class="category-badge" id="category">General Knowledge</div>
+      <h2 id="question">Loading question...</h2>
+
+      <div class="options-grid" id="options-container">
+        <!-- Buttons generated dynamically via JS -->
+      </div>
+
+      <div class="lifelines">
+        <button class="btn-lifeline" id="btn-5050" onclick="useLifeline('5050')">
+          💡 50/50 (Watch Ad)
+        </button>
+        <button class="btn-lifeline" id="btn-skip" onclick="useLifeline('skip')">
+          ⏭️ Skip (Watch Ad)
+        </button>
+      </div>
+    </main>
+
+    <footer class="quiz-footer">
+      <p id="feedback-msg"></p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
